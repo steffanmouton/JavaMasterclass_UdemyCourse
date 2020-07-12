@@ -18,8 +18,7 @@ public class Main {
         var inputVal = System.console().readLine();
         */
 
-
-        pounds = 200d;
+        pounds = 200.0d;
         System.out.println("Weight to check in pounds: " + pounds);
 
         kilos = .45359237 * pounds;
