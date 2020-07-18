@@ -40,5 +40,6 @@ public class Main {
         // Have to use a cast because the value of the sum below is seen as integer, which doesn't necessarily fit
         // nicely inside of a short. With long this isn't a concern.
         short shortTotal = (short)(10 + 10 * (myChallengeByte + myChallengeInt + myChallengeShort));
+        
     }
 }

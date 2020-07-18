@@ -1,20 +1,24 @@
 package net.blacksheepworks;
 
-public class Main {
+public class Main
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         boolean gameOver = true;
         int score = 800;
         int levelCompleted = 5;
         int bonus = 100;
 
-        if (score == 5000){
+        if (score == 5000)
+        {
             System.out.println("YOur score was " + score + ".");
 
         }
 
-        if (gameOver){
+        if (gameOver)
+        {
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
@@ -34,11 +38,6 @@ public class Main {
         levelCompleted = 8;
         bonus = 200;
 
-        if (gameOver){
-            int finalScore = score + levelCompleted * bonus;
-            System.out.println("Your final score was " + finalScore);
-        }
-
 
         // === Implementation 2 ===
 
@@ -47,13 +46,21 @@ public class Main {
         levelCompleted = 5;
         bonus = 100;
 
-        if (gameOver){
+        if (gameOver)
+        {
 
         }
 
     }
 
-
-
+    public static void CalculateScore(boolean gameOver, int score, int levelCompleted, int bonus)
+    {
+        if (gameOver)
+        {
+            int finalScore = score + levelCompleted * bonus;
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
 
 }
+
