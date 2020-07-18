@@ -11,17 +11,7 @@ public class Main
         int levelCompleted = 5;
         int bonus = 100;
 
-        if (score == 5000)
-        {
-            System.out.println("YOur score was " + score + ".");
-
-        }
-
-        if (gameOver)
-        {
-            int finalScore = score + (levelCompleted * bonus);
-            System.out.println("Your final score was " + finalScore);
-        }
+        CalculateScore(gameOver, score, levelCompleted, bonus);
 
 
         // Challenge:
@@ -33,23 +23,15 @@ public class Main
 
         // === Implementation 1 ===
 
-        // Set variables to new vals, then run if check and print
+        CalculateScore(gameOver, 10000, 8, 200);
+
+        // === Implementation 2 ===
+
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
 
-
-        // === Implementation 2 ===
-
-        // Reset variables to original vals
-        score = 800;
-        levelCompleted = 5;
-        bonus = 100;
-
-        if (gameOver)
-        {
-
-        }
+        CalculateScore(gameOver, score, levelCompleted, bonus);
 
     }
 
