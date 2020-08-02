@@ -16,6 +16,10 @@ public class Car
 
     public void setModel(String model)
     {
-        this.model = model;
+        String validModel = model.toLowerCase();
+        if (validModel.equals("mini") || validModel.equals("carrera"))
+            this.model = model;
+        else
+            this.model = "Invalid Model Type: " + validModel;
     }
 }

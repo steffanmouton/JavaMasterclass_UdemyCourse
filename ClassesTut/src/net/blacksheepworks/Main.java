@@ -3,11 +3,7 @@ package net.blacksheepworks;
 public class Main {
 
     public static void main(String[] args) {
-	    Car porsche = new Car();
-	    Car mini = new Car();
-
-	    porsche.setModel("Carrera");
-
-        System.out.println("Model is: " + porsche.getModel());
+        BankAccountChallenge Challenge1 = new BankAccountChallenge();
+        Challenge1.run();
     }
 }
