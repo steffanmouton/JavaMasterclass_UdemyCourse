@@ -17,6 +17,12 @@ public class BankAccount
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount()
+    {
+        // This is how we implement default constructors in Java.
+        this(123456, 4291.50f, "CustName", "CustEmail", 123456789L);
+    }
+
     public void depositFunds(float amount)
     {
         balance += amount;
