@@ -23,6 +23,12 @@ public class BankAccount
         this(123456, 4291.50f, "CustName", "CustEmail", 123456789L);
     }
 
+    // Partial default constructor.
+    public BankAccount(String customerName, String email, long phoneNumber)
+    {
+        this(123456, 4291.50f, customerName, email, phoneNumber);
+    }
+
     public void depositFunds(float amount)
     {
         balance += amount;
