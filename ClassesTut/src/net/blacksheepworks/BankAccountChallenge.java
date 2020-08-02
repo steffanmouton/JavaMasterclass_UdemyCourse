@@ -14,16 +14,15 @@ public class BankAccountChallenge
     You will want to create various code in the main class to confirm your code is working
     Add some sout in the two methods above as well.
 
-    Steffan Note: I will be wrapping all of this in this class instead of Main to keep it clean. Also, we technically
-        have not been taught constructors as of yet so I will implement this without them.
+    Steffan Note: Previous commit used no constructors. Implementing them now as per instruction in tutorial.
 
     */
     public void run()
     {
         // Initialize account. Set balance. Print balance.
-        BankAccount acc = new BankAccount();
-        acc.setBalance(1000);
-        System.out.println(acc.getBalance());
+        BankAccount acc = new BankAccount(12345, 1000, "Steffan M",
+                "stefemail@email.com",3450958321L);
+        acc.printBalance();
 
         // Deposit Cash
         acc.depositFunds(125);

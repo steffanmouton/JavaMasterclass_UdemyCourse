@@ -8,6 +8,14 @@ public class BankAccount
     private String email;
     private long phoneNumber;
 
+    public BankAccount(int accountNumber, float balance, String customerName, String email, long phoneNumber)
+    {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     public void depositFunds(float amount)
     {
