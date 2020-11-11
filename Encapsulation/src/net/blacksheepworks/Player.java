@@ -3,7 +3,7 @@ package net.blacksheepworks;
 // First class, to show one non-encapsulated, for comparison.
 public class Player
 {
-    public String name;
+    public String fullName;
     public int health;
     public String weapon;
 
